@@ -1,0 +1,190 @@
+h1 { /*name of company text styling*/
+color: black;
+font-family: 'Damion';
+font-size: 32px;
+position: relative;
+top: -20px;
+left: -310px;
+margin: 10px;
+}
+span{ /*specific color for part of company name styling*/
+color: #C5110B;
+}
+p1 { /*slogan text styling*/
+    font-size: 11px;
+    font-family: 'Iceberg';
+    color: #333333;
+    position: relative;
+    left: -271px;
+    top: -45px;
+    border: 10px;
+}
+.logo{ /*general logo styling*/
+  display: flex;
+  justify-content: center;
+}
+
+#navbar { /*general navbar styling*/
+  background:#d3d3d3;
+  color: #333333;
+  position:absolute;
+  top: 70px;
+  left: 30%;
+  height: 30px;
+  line-height: 40px;
+  width: 38%;
+  z-index: 10;
+  border-top: 1px solid #333;  
+}
+
+.nav-wrapper { /*general logo styling*/
+  margin: auto;
+  text-align: center;
+  width: 70%;
+} @media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  } @media(max-width: 638px) {
+      .nav-wrapper {
+        width: 100%;
+      }
+    } 
+
+#navbar ul { /*general logo styling*/
+  float: left;
+  list-style: none;
+  /* margin-right: 14px; */
+  margin-top: 0px;
+  text-align:center;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+} @media(max-width: 640px) {
+    #navbar ul {
+      display: none;
+    }
+  } @media(orientation: landscape) {
+      #navbar ul {
+        display: inline-block;
+      }
+    }
+
+#navbar li { /*general logo styling*/
+  display: inline-block;
+}
+
+#navbar li a { /*general logo styling*/
+  color:#333333;
+  display: block;
+  font-size: 0.9em;
+  height: 30px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 1px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease; 
+}
+li:not(:last-child) { 
+  border-right:solid 1px #333;/* This will not give border to last li element */
+  height: 30px;
+  top: 10px;  
+}
+
+#navbar li a:hover { /*navbar hover styling*/
+  color:white;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  background: #C5110B;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: #C5110B;
+}
+
+#navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a:after {
+  background:#C5110B;
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+  background:#C5110B;
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+  #navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+  footer{ /*general footer styling*/
+      background-color: #C5110B;
+      color: black;
+      position:fixed;
+        left:0px;
+        bottom:0px;
+        height:10%;
+        width:100%;
+        padding: 10px;
+  }
+  p2{ /*general footer text styling*/
+    float: left;
+    text-align: left;
+    margin-left: 15%;
+    font-family: 'Arial';
+  }
+  p3{ /*general footer text styling*/
+    float:right;
+    text-align: right;
+    margin-right: 15%;
+    font-family: 'Arial';
+  }
+  .container1 { /*general footer text styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  img { 
+    max-width: 100%;
+  }
+  .magazine { /*general footer image styling*/
+    margin-left: 24%;
+    margin-top: -21.9%;
+    justify-content: left;
+
+  }
+  .text { /*general footer text styling*/
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: -21.5%;
+    color:#C5110B;
+    width:20%;
+    justify-content: center;
+    padding-left: 5%;
+  }
+  .linktext{ /*general footer hyperlink text styling*/
+    justify-content: center;
+    float:right;
+    color:#C5110B;
+    font-size: 20px;
+    margin-top: -15%;
+    padding-left: 5%;
+    width:20%;
+  }

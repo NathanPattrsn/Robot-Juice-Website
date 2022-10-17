@@ -1,0 +1,444 @@
+.item1{
+    grid-column: span 2;
+    grid-row: span 2;
+} 
+/*styling for item1 on index page*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; /* added to make equal height rows */
+    grid-gap: 1rem;
+}
+
+section{
+    padding:0px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 50vh;
+    margin: 0;
+    grid-template-areas:
+        "... , ... , ..."
+        "... , ... , ..."
+        "section , section , section"
+}
+/*styling for container on index page*/
+#homeRobotImg {
+    grid-area:section;
+}
+
+@media all and (min-width: 576px) and (max-width: 900px){
+    .container{
+        grid-template-areas: 
+        "... ..."
+        "... ..."
+        "... ..."
+        "section section";
+        grid-template-rows: 80px 70px 1fr 70px;
+        grid-template-columns: 1fr 15%;
+    }/*css grid is created*/
+}
+
+@media all and (max-width: 575px){
+    .container{
+        grid-template-areas:
+        "..."
+        "..."
+        "..."
+        "..."
+        "section";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;
+        grid-template-columns: 1fr; 
+    }
+}
+
+#homeRobotImg{
+    position:absolute;
+    top:11%;
+    left:30%;
+    width: 38%;
+}/*styling for main image on index page*/
+
+.container p{
+    position: absolute;
+    padding: 3%;
+    left: 28.8em;
+    top: 49%;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font-size: 20px;
+    color: #333;
+}/*styling for main image text on index page*/
+* {
+    box-sizing:border-box;
+  }
+  
+  .column {
+    width: 10%;
+    margin-top: 100px;
+    float:left;
+    color:#333;
+    border-bottom: 1px solid #333;
+    }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column p{
+    font-size: 14px;
+    font-family: 'Arial';
+    text-align: left;
+    width: 80%;
+  }
+ .row{
+      display: flex;
+      justify-content: center;
+  }
+  .row2 {
+    display: flex;
+    justify-content: center;
+}
+.column2 {
+    width: 40%;
+    color:#333;
+    }
+
+  .column2 h3{
+      color: #333;
+      text-align: left;
+  }
+
+.column2 h4{
+    text-align: left;
+    font-family: 'Arial';
+    color: #A3866A;
+    font-weight: bold;
+
+}
+.column2 p{
+    font-family: 'Arial';
+    text-align: left;
+    width: 40%;
+    font-size: 12px;
+
+}
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row3 {
+    display: flex;
+    justify-content: center;
+}
+.row4 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+form{
+    font-family: 'Arial';
+    font-size: 14px;
+}
+#poll p{
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #C5110B;
+}
+#poll{
+    background-color: white;
+    border: 5px;
+    width: 21%;
+    float: right;
+    margin-top: -27%;
+    margin-right: 30%;
+}
+#polltext p{
+    color:#333;
+}
+.column2 p5{
+    font-size: 12px;
+    font-family: 'Arial';
+    color: #C5110B;
+    font-style: italic;
+    text-align: center;
+    margin-left: 30%;
+}/*index page styling ends here*/
+
+.column3 { /*product page styling starts here*/
+    width: 5%;
+    left: 26%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    position: relative;
+    }
+  
+  /* Clearfix (clear floats) */
+  .row5::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #prod-thumb1{
+    border: 1px solid #C5110B; /*3 product thumbnails are created and styled*/
+  }
+  #prod-thumb2{
+    border: 1px solid #C5110B;
+  }
+  #prod-thumb3{
+    border: 1px solid #C5110B;
+  }
+
+  .container2{
+    position:relative;
+    left:32%;
+    width: 38%;
+  }
+  #rbjbikeoil{ /*main product page image*/
+      justify-content: center;
+      border-bottom: 1px solid #333;
+      margin-top: -42%;
+      margin-left: -6%;
+      padding:5%;
+  }
+  .container2 h3{   /*product name on products page*/
+      margin-left: 70%;
+      margin-top: -52%;
+      font-size: 23px;
+  }
+  .container2 p{ /*product price on products page*/
+    margin-left:70%;
+    margin-top: -2%;
+    font-family: 'Arial';
+    color: #C5110B;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#buynowbtn{ /*buy now button on products page*/
+    background-color: #C5110B;
+    color: white;
+    font-family: 'Arial';
+    width: 41%;
+}
+.container3{ /*styling for drop down button/menus*/
+    position:relative;
+    left:59%;
+    margin-top: -11%;
+  }
+
+  .container4{ /*text under buy now button*/
+    font-family: 'Arial';
+    font-weight: bold;
+    color: #a1a1a1;
+    margin-left: 60%;
+    text-decoration: none;
+  }
+  .container5{ /*text under buy now button*/
+    font-family: 'Arial';
+    font-weight: bold;
+    color: #a1a1a1;
+    margin-left: 65%;
+  }
+  .container6{ /*main description on products page*/
+    font-family: 'Arial';
+    color: black;
+    margin-left: 59%;
+    font-size: 14px;
+  }
+  .container7 h3{ /*similar products section styling*/
+    font-size: 23px;
+    color: #333;
+}
+.container7{ /*similar products overall styling*/
+    margin-left: 26%;
+    margin-top: 0%;
+    justify-content: center;
+    padding:3% ;
+    border-bottom: 1px solid #333;
+}
+#sim1{ /*each similar product image styling*/
+    width:16%;
+}
+#sim2{ /*each similar product image styling*/
+    width:16%;
+}
+#sim3{ /*each similar product image styling*/
+    width:16%;
+}
+#sim4{ /*each similar product image styling*/
+    width:16%;
+}
+#sim5{ /*each similar product image styling*/
+    width:16%;
+}
+#sim6{ /*each similar product image styling*/
+    width:16%; 
+}
+.checked{ /*color set for review star icon*/
+    color:#C5110B;
+}
+.container8 h3{ /*product reviews text styling*/
+    font-size: 23px;
+    color: #333;
+}
+.container8{ /*product reviews section styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 0%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+}
+.container9{ /*review 1 styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 1%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+.container9 span{ /*review 1 styling*/
+    font-weight: bold;
+    font-size: 27px;
+}
+.container9 h3{ /*review 1 styling*/
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 13%;
+    margin-top: -10%;
+}
+.container9 p{ /*review 1 styling*/
+    font-family: 'Arial';
+    font-size: 13px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+.container10{ /*review 2 styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 1%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+}
+.container10 span{ /*review 2 styling*/
+    font-weight: bold;
+    font-size: 27px;
+}
+.container10 h3{ /*review 2 styling*/
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 13%;
+    margin-top: -10%;
+}
+.container10 p{ /*review 2 styling*/
+    font-family: 'Arial';
+    font-size: 13px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+.container11{ /*review 3 styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 1%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+}
+.container11 span{ /*review 3 styling*/
+    font-weight: bold;
+    font-size: 27px;
+}
+.container11 h3{ /*review 3 styling*/
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 13%;
+    margin-top: -10%;
+}
+.container11 p{ /*review 3 styling*/
+    font-family: 'Arial';
+    font-size: 13px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+.container12{ /*review 4 styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 1%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+}
+.container12 span{ /*review 4 styling*/
+    font-weight: bold;
+    font-size: 27px;
+}
+.container12 h3{ /*review 4 styling*/
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 13%;
+    margin-top: -10%;
+}
+.container12 p{ /*review 4 styling*/
+    font-family: 'Arial';
+    font-size: 13px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+.container13{ /*review 5 styling*/
+    justify-content: center;
+    margin-left: 26.1%;
+    margin-top: 1%;
+    padding: 0.1%;
+    border-bottom: 1px solid #333;
+}
+.container13 span{ /*review 5 styling*/
+    font-weight: bold;
+    font-size: 27px;
+}
+.container13 h3{ /*review 5 styling*/
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 13%;
+    margin-top: -10%;
+}
+.container13 p{ /*review 5 styling*/
+    font-family: 'Arial';
+    font-size: 13px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+#reviewsbtn{ /*review more button section styling*/
+    background-color: #C5110B;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial';
+    width: 20%;
+    font-size: 18px;
+    padding:1%;
+    border-bottom: 1px solid #333;
+}
+#reviewbtn{  /*review more button styling*/
+    background-color: #d3d3d3;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial';
+    width: 90%;
+    font-size: 18px;
+    padding:3%;
+    border-bottom: 1px solid #333;
+    margin-top: -2%;
+    margin-left: -2%;
+}

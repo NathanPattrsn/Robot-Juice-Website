@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+<title>Products</title> <!-- This is the title of the page-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" media="only screen"/> <!-- Linked to the stylesheet which controls the page's general style-->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="grid.css"/> <!-- Linked to the stylesheet which controls the entire page's style-->
+<script src="assets/jquery.min.js"></script> <!-- Linked to the jquery asset-->
+    <script src="reviews.js"></script><!-- Linked to the javascript file-->
+<style>
+    body { 
+        background:#D3D3D3; 
+        font-family:'Iceberg' ;
+    } 
+
+</style> <!--end tag for the style of the page-->
+</head><!--end tag for the head-->
+
+<body>
+    <div class="logo"> <!--logo div starts-->
+    <section>
+    <h1><link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet'><span>Robot</span> Juice</h1>
+    <p1><link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet'>fictitious cycle lubricants</p1> <!--text for the logo-->
+    </section>
+</div>
+    <!-- code for nav bar begins -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<nav id="navbar" class="">
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li><!--
+   --><li><a href="product.html">Products</a></li><!--
+   --><li><a href="#protect">Protect</a></li><!--
+   --><li><a href="#stockists">Stockists</a></li><!--
+   --><li><a href="#events">Events</a></li><!--
+   --><li><a href="#reviews">Reviews</a></li>
+    </ul>
+</nav>
+
+<div class="row5">
+    <div class="column3">
+    <img src="images/robot-juice-images/prod-thumb1.jpg" id="prod-thumb1" alt="Bike Oil" style="width:100%"> <!--where the 3 product thumbnails come into play-->
+</div>
+<div class="column3">
+    <img src="images/robot-juice-images/prod-thumb2.jpg" id="prod-thumb2" alt="Dry Lubricant" style="width:100%">
+</div>
+    <div class="column3">
+    <img src="images/robot-juice-images/prod-thumb3.jpg" id="prod-thumb3" alt="Oil" style="width:100%">
+</div>
+</div>
+
+<section class="container2">
+    <img src="images/robot-juice-images/robotjuicebikeoil.jpg" id="rbjbikeoil" alt="Robot Juice Bike Oil"><!--code for the main image-->
+    <h3>Bike Oil</h3>
+    <p>£99.99</p>
+    </section>
+    <section class="container3" style="width:30%">
+    <form action="/action_page.php">
+        <select name="size" id="sizes" style="width:20%"><!--drop down menu is created-->
+            <option value="size">Size</option><!--values are created-->
+          <option value="10ml">10 ml</option>
+          <option value="50ml">50 ml</option>
+          <option value="100ml">100 ml</option>
+        </select>
+        <select name="qty" id="quantity" style="width:20%"><!--drop down menu is created-->
+            <option value="quantity">Qty</option>
+          <option value="1">1</option><!--values are created-->
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
+        <input type="submit" value="BUY NOW" id="buynowbtn" ><!--button is created-->
+      </form>
+      </section>
+      <section class="container4" style="width: 30%;"><!--text is created-->
+        <p>FIND NEAREST STOCKIST</p>
+    </section>
+    <section class="container5" style="width: 30%;"><!--text is created with image hyperlinks-->
+        <p>SHARE &nbsp; <a href="URL" target="https://facebook.com"><img src="images/robot-juice-images/facebook.jpg" id="fbimg" alt="Facebook"></a>&nbsp;<a href="URL" target="https://twitter.com"><img src="images/robot-juice-images/twitter.jpg" id="twimg" alt="Twitter"></a>&nbsp;<a href="URL" target="https://mail.google.com/"><img src="images/robot-juice-images/email.jpg" id="emailimg" alt="Email"></a> </p>
+    </section>
+    <section class="container6" style="width: 13%;"><!--text is created-->
+    <p>Robot Juice bike oil for bicycles stops rust and other corrosion from starting. Applied to already corroding metals it breaks down the corrosion and starts preventing it from building up and protects from the point of contact.</p>
+    </section>
+
+    <section class="container7" style="width: 40%;"> <!--text and images are created-->
+    <h3>Similar Products</h3>
+    <img src="images/robot-juice-images/simprod.jpg" id="sim1" alt="Similar Product One">&nbsp;<img src="images/robot-juice-images/simprod.jpg" id="sim2" alt="Similar Product Two">&nbsp;<img src="images/robot-juice-images/simprod.jpg" id="sim3" alt="Similar Product Three">&nbsp;<img src="images/robot-juice-images/simprod.jpg" id="sim4" alt="Similar Product Four">&nbsp;<img src="images/robot-juice-images/simprod.jpg" id="sim5" alt="Similar Product Five">&nbsp;<img src="images/robot-juice-images/simprod.jpg" id="sim6" alt="Similar Product Six">
+    </section>
+
+    <script src="js/reviews.js"></script><!--javascript is linked in body-->
+        <section class="container8" style="width: 40%;">
+        <h3>Product Reviews&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span></h3>
+        </section>
+    <section class="container9" style="width: 40%;">
+    <img src="images/robot-juice-images/reviewicon1.jpg" id="revimg1" alt="Review One">&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>
+    <h3>Great Greace!!</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <section class="container10" style="width: 40%;">
+      <img src="images/robot-juice-images/reviewicon1.jpg" id="revimg2" alt="Review Two">&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>
+      <h3>Great Greace!!</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section> 
+      <section class="container11" style="width: 40%;">
+        <img src="images/robot-juice-images/reviewicon1.jpg" id="revimg3" alt="Review Three">&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>
+        <h3>Great Greace!!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section> 
+        <section class="container12" style="width: 40%;">
+          <img src="images/robot-juice-images/reviewicon2.jpg" id="revimg4" alt="Review Four">&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>
+          <h3>This Juice just keeps me going..</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </section> 
+          <section class="container13" style="width: 40%;">
+            <img src="images/robot-juice-images/reviewicon1.jpg" id="revimg5" alt="Review Five">&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>&nbsp;<span>&#42;</span>
+            <h3>Great Greace!!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <br><br>
+            <section class="reviewsbtn" id="reviewbtn" style="width: 100%;"><!--button for more reviews is created-->
+        <input type="submit" value="READ ALL REVIEWS" id="reviewsbtn" >     
+        </section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container1">
+    <div class="magazine" >
+<img src="images/robot-juice-images/cyclemagazine.jpg" id="cyclemagazine" alt="Cycle Magazine"><!--first half of footer is created-->
+</div>
+<div class="text">
+<h3>Latest Reviews<br></h3>
+<p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubes.</p>
+</div>
+<div class="linktext"><!--first half of footer links are created-->
+<h3>Links</h3>
+<p><a href="#">Edge Hill University<br><br></a><a href="#">Dave Walsh<br><br></a><a href="#">https://twitter.com/walsh_d<br><br></a><a href="#">CIS1110 - Web Design and Development Module<br><br></a></p>
+<br><br>
+
+</div>
+</div>
+<footer class ="footer"><!--main half of footer is created-->
+    <p2>Robot Juice Fictitious Products Not Ltd., Unit 9 & 3/4, Privet Drive, Little Whingeing, Surrey DN18 5RP<br><br>
+    Telephone: +44 (0)1695 657648. Email:<a href ="mailto: walshd@edgehill.ac.uk">walshd@edgehill.ac.uk</a></p2>
+    <p3><a href="#">Contact Us | </a><a href="#">Privacy | </a><a href="#">Terms & Conditions | </a><a href="#">Accessibility</a><br><br>
+    Copyright © 2018 Dave Walsh. Design by Dave Walsh</p3>
+</footer>
+</body>
+</html>
